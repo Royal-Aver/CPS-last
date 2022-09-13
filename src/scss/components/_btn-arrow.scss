@@ -1,0 +1,16 @@
+.btn-arrow {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid $radical-red;
+    background: url(.././img/arrow-radical-red.svg) no-repeat center;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+}

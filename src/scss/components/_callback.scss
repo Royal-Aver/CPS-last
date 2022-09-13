@@ -1,0 +1,9 @@
+.callback {
+  z-index: -100;
+  opacity: 0.1;
+  transition: opacity .5s ease-in-out;
+  &--active {
+    z-index: 100;
+    opacity: 1;
+  }
+}

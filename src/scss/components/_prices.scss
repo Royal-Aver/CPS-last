@@ -1,0 +1,166 @@
+.prices {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #D9FFF5;
+}
+
+.prices__title-wrapper {
+  background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+  padding: 16px;
+}
+
+.prices__content {
+  min-height: 320px;
+}
+
+.list-prices {
+  padding: 16px 0;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
+}
+
+.list-prices__item {
+  width: 260px;
+  height: 200px;
+  max-width: 100%;
+  background-color: $white;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    margin-right: 16px;
+  }
+
+  &--head {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    width: auto;
+    height: 64px;
+    align-items: center;
+    border-bottom: 1px solid #EAEAEA;
+    padding: 0px 16px;
+    justify-content: normal;
+    gap: 10px;
+
+    &:not(:last-child) {
+      margin-right: 0px;
+    }
+
+    &--head {
+      display: flex;
+    }
+  }
+}
+
+.list-prices__terms {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: start;
+
+    &:not(:last-child) {
+    margin-bottom: 0px;
+    }
+  }
+}
+
+.list-prices__services {
+
+  @media (min-width: 768px) {
+    flex: 1 1 350px;
+  }
+}
+
+.list-prices__cost {
+
+  @media (min-width: 768px) {
+    flex: 1 0 80px;
+  }
+}
+
+.list-prices__time {
+
+  @media (min-width: 768px) {
+    flex: 1 0 60px;
+  }
+}
+
+.list-prices__btn-inner {
+  @media (min-width: 768px) {
+    flex: 0 1 120px;
+  }
+}
+
+.list-prices__name {
+  font-size: 14px;
+  line-height: 16px;
+  opacity: 0.72;
+  margin-bottom: 4px;
+
+  @media (min-width: 768px) {
+    display: none;
+
+    &--tablet {
+      display: block;
+      text-transform: lowercase;
+    }
+  }
+}
+
+.list-prices__subname {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+}
+
+.list-prices__btn {
+  position: absolute;
+  right: 10px;
+  top: 73%;
+  transform: translateY(-50%);
+
+  @media (min-width: 768px) {
+    position: static;
+    transform: translateY(0%);
+    width: 120px;
+  }
+}
+
+.prices__offer-text {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  margin-bottom: 5px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 16px;
+  }
+  }
+
+  .prices__offer-link {
+    font-weight: 700;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      padding-left: 20px;
+      background: url(.././img/arrow-radical-red.svg) no-repeat center;
+      width: 6px;
+      height: 12px;
+      bottom: 2px;
+    }
+  }

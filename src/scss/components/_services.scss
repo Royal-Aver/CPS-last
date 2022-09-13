@@ -1,0 +1,264 @@
+.services {
+  padding: 24px 0 35px;
+  position: relative;
+  border-bottom: 1px solid #D9FFF5;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 24px;
+    width: 4px;
+    height: 40px;
+    background-color: #41F6D7;
+    border-radius: 0 5px 5px 0;
+  }
+
+  @media (min-width: 1120px) {
+      padding: 42px 0 35px;
+  }
+
+  @media (min-width: 1120px) {
+    &::before {
+      top: 42px;
+    }
+  }
+}
+
+.services__title-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 22px;
+
+  @media (min-width: 768px) {
+      margin-bottom: 30px;
+  }
+
+  @media (min-width: 1120px) {
+      margin-bottom: 8px;
+  }
+}
+
+.services__title {
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+}
+
+.services__userbar {
+  display: none;
+
+  @media (min-width: 1120px) {
+      display: flex;
+  }
+}
+
+.services__userbar-item:not(:last-child) {
+margin-right: 32px;
+}
+
+.services__userbar-link {
+  display: flex;
+  align-items: center;
+}
+
+.services__userbar-text {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.services__icon {
+  width: 40px;
+  height: 40px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services__repair-icon {
+  background-image: url(.././img/header/repair.svg);
+}
+
+.services__checkstatus-icon {
+  background-image: url(.././img/header/checkstatus.svg);
+}
+
+.services__menu {
+  margin-bottom: 5px;
+
+  @media (min-width: 768px) {
+      margin-bottom: 14px;
+    }
+
+  @media (min-width: 1120px) {
+      margin-bottom: -4px;
+    }
+}
+
+  .services__list {
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+    scrollbar-width: none; /* Скрывает скрол в FireFox */
+    margin-bottom: 20px;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+
+    @media screen {
+      overflow: auto;
+    }
+
+    @media (min-width: 1120px) {
+        flex-wrap: wrap;
+      }
+  }
+
+    .services__item {
+      flex: 1 0 auto;
+
+      &:not(:last-child) {
+        margin-right: 25px;
+      }
+
+      &:last-child {
+        display: none;
+      }
+
+      @media (min-width: 1120px) {
+        &:last-child  {
+          display: block;
+        }
+        }
+    }
+
+.services__link {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7E7E82;
+  padding: 8px;
+  border: 2px solid transparent;
+
+&:hover {
+  border: 2px solid #B8FFEC;
+  border-radius: 6px;
+}
+}
+
+@media (min-width: 768px) {
+.services__content {
+  display: flex;
+  justify-content: space-between;
+}
+}
+
+@media (min-width: 768px) {
+.services__content-left {
+margin-right: 48px;
+}
+}
+
+  .services__text {
+    flex: 1 1 312px;
+    margin: 0 3px 10px 0;
+  }
+
+  @media (min-width: 768px) {
+    .services__text {
+      margin: 0 3px 10px 0;
+      }
+  }
+
+.services__text-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.services__text-item:last-child {
+display: none;
+}
+
+@media (min-width: 768px) {
+  .services__text-item {
+    line-height: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+  .services__text-item:last-child {
+    display: block;
+    line-height: 20px;
+    }
+}
+
+.services__text-add {
+  display: none;
+
+&--visible {
+  display: inline;
+}
+
+@media (min-width: 1120px) {
+    display: inline;
+  }
+}
+
+.services__add-btn {
+  padding-left: 32px;
+  margin-bottom: 16px;
+  display: none;
+
+  @media (min-width: 768px) {
+    position: relative;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 8px;
+    width: 8px;
+    height: 11px;
+    background-image: url(.././img/services/arrow-bottom.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+&--active {
+  &::before {
+    transform: rotate(180deg);
+    top: 30%;
+  }
+}
+}
+
+.services__img-box {
+  flex: 1 0 360px;
+  border-radius: 6px;
+}
+
+@media (min-width: 1120px) {
+  .services__img-box{
+    flex: 1 0 531px;
+    // padding-top: 32px;
+    }
+}
+
+.services__img {
+  object-fit: cover;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .services__img{
+    border-radius: 6px;
+    }
+}

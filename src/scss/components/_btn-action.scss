@@ -1,0 +1,28 @@
+.btn-action {
+  position: relative;
+  width: 119px;
+  height: 32px;
+  background-color: $radical-red;
+  border-radius: 16px;
+  font-size: 12px;
+  color: $white;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 12px;
+  font-weight: 700;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: url(.././img/arrow-white.svg) no-repeat center;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 7px;
+    height: 10px;
+  }
+}

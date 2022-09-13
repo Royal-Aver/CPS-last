@@ -1,0 +1,99 @@
+.header {
+  height: 88px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid #D9FFF5;
+
+  @media (min-width: 1120px) {
+      display: none;
+  }
+}
+
+.header__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+}
+
+.header__burger {
+  margin-right: 17px;
+  position: relative;
+
+  @media (min-width: 768px) {
+      margin-right: 43px;
+  }
+}
+
+.userbar {
+  display: flex;
+  align-items: center;
+}
+
+.userbar__left {
+  display: none;
+  align-items: center;
+  margin-right: 42px;
+
+  @media (min-width: 768px) {
+      display: flex;
+  }
+}
+
+.userbar__left-item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.userbar__link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.userbar__call {
+  background-image: url(.././img/header/call.svg);
+}
+
+.userbar__chat {
+  background-image: url(.././img/header/chat.svg);
+}
+
+.userbar__profile {
+  background-image: url(.././img/header/profile.svg);
+}
+
+.userbar__right {
+  position: relative;
+  display: flex;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 32px;
+    left: -25px;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 1px;
+    background-color: #EAEAEA;
+  }
+}
+
+.userbar__apply {
+  margin-right: 10px;
+  background-image: url(.././img/header/repair.svg);
+}
+
+.userbar__repair-status {
+  margin-right: 10px;
+  background-image: url(.././img/header/checkstatus.svg);
+}
