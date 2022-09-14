@@ -15,8 +15,13 @@ display: none;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets {
-  bottom: 35px;
+  bottom: 10px;
 }
+
+.repair-viev .swiper-horizontal > .swiper-pagination-bullets {
+  bottom: -3px;
+}
+
 
 .swiper-pagination-bullet {
   background-color: #DDDDDD;

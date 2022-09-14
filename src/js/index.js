@@ -36,11 +36,5 @@ let swiperMode = () => {
      }
   }
 
-window.onload = function() {
-    swiperMode();
-}
-
-window.onresize = function() {
-    swiperMode();
-}
+swiperMode();
 

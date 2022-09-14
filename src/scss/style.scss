@@ -25,41 +25,44 @@ $radical-red: #FF3E79;
 @import 'components/_footer.scss';
 
 @font-face {
-  font-family: "TTlakes", sans-serif;
-  src: url(../fonts/TTLakes-Bold.woff2),
-  url(../fonts/TTLakes-Bold.woff);
+  font-family: "TTlakes";
+  font-style: normal;
   font-weight: 700;
+  src: local("TTlakes"),
+  url(../fonts/TTLakes-Bold.woff2) format("woff2"),
+  url(../fonts/TTLakes-Bold.woff) format("woff");
   font-display: swap;
-  font-style: normal;
 }
 
 @font-face {
-  font-family: "TTlakes", sans-serif;
-  src: url(../fonts/TTLakes-Medium.woff2),
-  url(../fonts/TTLakes-Medium.woff);
+  font-family: "TTlakes";
+  font-style: normal;
   font-weight: 500;
+  src: local("TTlakes"),
+  url(../fonts/TTLakes-Medium.woff2) format("woff2"),
+  url(../fonts/TTLakes-Medium.woff) format("woff");
   font-display: swap;
-  font-style: normal;
+
 }
 
 @font-face {
-  font-family: "TTlakes", sans-serif;
-  src: url(.././fonts/TTLakes-Regular.woff2),
-  url(.././fonts/TTLakes-Regular.woff),
-  url(.././fonts/TTLakes-Regular.eot),
-  url(.././fonts/TTLakes-Regular.ttf);
+  font-family: "TTlakes";
+  font-style: normal;
   font-weight: 400;
+  src: local("TTlakes"),
+  url(.././fonts/TTLakes-Regular.woff2) format("woff2"),
+  url(.././fonts/TTLakes-Regular.woff) format("woff");
   font-display: swap;
-  font-style: normal;
 }
 
 @font-face {
-  font-family: "TTlakes", sans-serif;
-  src: url(../fonts/TTLakes-Light.woff2),
-  url(../fonts/TTLakes-Light.woff);
-  font-weight: 300;
-  font-display: swap;
+  font-family: "TTlakes";
   font-style: normal;
+  font-weight: 300;
+  src: local("TTlakes"),
+  url(../fonts/TTLakes-Light.woff2) format("woff2"),
+  url(../fonts/TTLakes-Light.woff) format("woff");
+  font-display: swap;
 }
 
 html, body {
@@ -73,7 +76,7 @@ html, body {
   letter-spacing: -0.2px;
 }
 
-h2, h3 {
+h2 {
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
@@ -93,13 +96,13 @@ h2, h3 {
 
   @media (min-width: 1366px) {
       min-width: 1002px;
-      padding:0 32px;
+      padding:0 45px;
   }
 }
 
 .wrapper {
   @media (min-width: 1366px) {
-padding-left: 320px;
+padding-left: 296px;
   }
 }
 

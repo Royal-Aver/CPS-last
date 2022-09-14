@@ -3,14 +3,18 @@
   border-bottom: 1px solid #D9FFF5;
 
   @media (min-width: 768px) {
-    padding-bottom: 34px;
+    padding-bottom: 32px;
+  }
+
+  @media (min-width: 1366px) {
+    padding-bottom: 50px;
   }
 }
 
 .repair-menu__title-wrapper {
   background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
   padding: 16px 16px 16px 0;
-  margin-bottom: 32px;
+  margin-bottom: 22px;
 }
 
 .repair-menu__title {
@@ -18,8 +22,12 @@
 }
 
 .repair-menu__content {
-  margin-bottom: 24px;
-  min-height: 140px;
+  margin-bottom: 5px;
+  min-height: 120px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 9px;
+  }
 }
 
   .repair-menu__list {
@@ -27,7 +35,7 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: 2fr;
-      gap: 24px 16px;
+      gap: 14px 22px;
       height: 175px;
     }
 

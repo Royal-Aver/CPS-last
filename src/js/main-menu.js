@@ -2,7 +2,7 @@ export default function CallingMainMenu () {
   let buttonBurger = document.querySelector(".burger");
   let sidebar = document.querySelector(".sidebar");
   let buttonClosedMenu = document.querySelector(".sidebar__btn-closed-menu");
-  let overlay = document.querySelector(".page__overlay")
+  let overlay = document.querySelector(".page__overlay");
 
   buttonBurger.addEventListener("click", function () {
     buttonBurger.classList.toggle("burger--active");

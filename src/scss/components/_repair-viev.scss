@@ -1,6 +1,10 @@
 .repair-viev {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   border-bottom: 1px solid #D9FFF5;
+
+  @media (min-width: 1366px) {
+padding-bottom: 50px;
+  }
 }
 
 .repair-viev__title-wrapper {
@@ -13,20 +17,17 @@
 }
 
 .repair-viev__content {
-  min-height: 280px;
+  min-height: 207px;
 
-  @media (min-width: 768px) {
-    min-height: 240px;
-  }
 }
 
 .repair-viev__list  {
-  padding: 16px 16px 16px 0;
+  padding: 23px 16px 16px 0;
 
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    height: 190px;
+    height: 152px;
     gap: 20px 24px;
     overflow: hidden;
   }
@@ -41,8 +42,8 @@
 }
 
 .repair-viev__item {
-  width: 240px;
-  height: 160px;
+  width: 205px;
+  height: 125px;
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -54,6 +55,11 @@
   @media (min-width: 768px) {
     width: auto;
   }
+}
+
+.repair-viev__item-title {
+  font-size: 16px;
+font-weight: 500;
 }
 
 .repair-viev__btn {

@@ -26,13 +26,16 @@
           <div class="header__userbar userbar">
             <ul class="userbar__left">
               <li class="userbar__left-item">
-                <button class="userbar__link userbar__call" type="button"> </button>
+                <button class="userbar__link userbar__call" type="button">
+                </button>
               </li>
               <li class="userbar__left-item">
-                <button class="userbar__link userbar__chat" type="button"> </button>
+                <button class="userbar__link userbar__chat" type="button">
+                </button>
               </li>
               <li class="userbar__left-item">
-                <button class="userbar__link userbar__profile" type="button"> </button>
+                <button class="userbar__link userbar__profile" type="button">
+                </button>
               </li>
             </ul>
 
@@ -52,17 +55,16 @@
         </div>
       </header>
 
-      <div class="page__overlay"></div>
       <div class="page__sidebar sidebar">
         <div class="sidebar__wrapper">
           <div class="sidebar__header">
             <div class="sidebar__header-left">
               <button class="sidebar__btn-closed-menu"></button>
               <img
-              class="sidebar__logo"
-              src="img/header/logo.svg"
-              alt="Логотип SRC"
-            />
+                class="sidebar__logo"
+                src="img/header/logo.svg"
+                alt="Логотип SRC"
+              />
             </div>
             <div class="sidebar__header-right">
               <a class="sidebar__header-search" href="#"></a>
@@ -101,13 +103,25 @@
           <div class="sidebar__footer">
             <ul class="sidebar__footer-userbar userbar__left">
               <li class="userbar__left-item">
-                <button class="userbar__link userbar__call sidebar__call" type="button"> </button>
+                <button
+                  class="userbar__link userbar__call sidebar__call"
+                  type="button"
+                >
+                </button>
               </li>
               <li class="userbar__left-item">
-                <button class="userbar__link userbar__chat sidebar__chat" type="button"> </button>
+                <button
+                  class="userbar__link userbar__chat sidebar__chat"
+                  type="button"
+                >
+                </button>
               </li>
               <li class="userbar__left-item">
-                <button class="userbar__link userbar__profile sidebar__userbar" type="button"> </button>
+                <button
+                  class="userbar__link userbar__profile sidebar__userbar"
+                  type="button"
+                >
+                </button>
               </li>
             </ul>
 
@@ -138,88 +152,93 @@
         </div>
       </div>
 
-      <div class="feedback form-popup">
-        <div class="form-popup__container">
-          <button class="form-popup__btn-close feedback__btn-close"> </button>
-          <form class="form-popup__form" action="#">
-            <h4 class="form-popup__title">Обратная связь</h4>
-            <input
-              class="form-popup__field"
-              type="text"
-              name="username"
-              placeholder="Имя"
-            />
-            <input
-              class="form-popup__field"
-              type="tel"
-              name="userphone"
-              placeholder="Телефон"
-            />
-            <input
-              class="form-popup__field"
-              type="email"
-              name="usermail"
-              placeholder="Электронная почта"
-            />
-            <textarea
-              class="form-popup__field feedback__textarea" name="message"
-              placeholder="Сообщение"
-            ></textarea>
-            <p class="form-popup__agreement"
-              >Нажимая “отправить”, вы даете согласие на
-              <a class="form-popup__agreement-link" href="#"
-                >обработку персональных данных</a
-              >
-              и соглашаетесь с нашей
-              <a class="form-popup__agreement-link" href="#"
-                >политикой конфиденциальности</a
-              ></p
-            >
-            <button class="form-popup__btn-submit btn-action" type="submit"
-              >отправить</button
-            >
-          </form>
-        </div>
-      </div>
-
-      <div class="callback form-popup">
-        <div class="form-popup__container">
-          <button class="form-popup__btn-close callback__btn-close"> </button>
-          <form class="form-popup__form" action="#">
-            <h4 class="form-popup__title">Заказать звонок</h4>
-
-            <input
-              class="form-popup__field"
-              type="tel"
-              name="userphone"
-              placeholder="Телефон"
-            />
-
-            <p class="form-popup__agreement"
-              >Нажимая “отправить”, вы даете согласие на
-              <a class="form-popup__agreement-link" href="#"
-                >обработку персональных данных</a
-              >
-              и соглашаетесь с нашей
-              <a class="form-popup__agreement-link" href="#"
-                >политикой конфиденциальности</a
-              ></p
-            >
-            <button class="form-popup__btn-submit btn-action" type="submit"
-              >отправить</button
-            >
-          </form>
-        </div>
-      </div>
-
       <main class="page">
+        <div class="page__overlay"></div>
+        <div class="feedback form-popup">
+          <div class="form-popup__container">
+            <button class="form-popup__btn-close feedback__btn-close"> </button>
+            <form class="form-popup__form" action="#">
+              <h4 class="form-popup__title">Обратная связь</h4>
+              <input
+                class="form-popup__field"
+                type="text"
+                name="username"
+                placeholder="Имя"
+              />
+              <input
+                class="form-popup__field"
+                type="tel"
+                name="userphone"
+                placeholder="Телефон"
+              />
+              <input
+                class="form-popup__field"
+                type="email"
+                name="usermail"
+                placeholder="Электронная почта"
+              />
+              <textarea
+                class="form-popup__field feedback__textarea"
+                name="message"
+                placeholder="Сообщение"
+              ></textarea>
+              <p class="form-popup__agreement"
+                >Нажимая “отправить”, вы даете согласие на
+                <a class="form-popup__agreement-link" href="#"
+                  >обработку персональных данных</a
+                >
+                и соглашаетесь с нашей
+                <a class="form-popup__agreement-link" href="#"
+                  >политикой конфиденциальности</a
+                ></p
+              >
+              <button class="form-popup__btn-submit btn-action" type="submit"
+                >отправить</button
+              >
+            </form>
+          </div>
+        </div>
+
+        <div class="callback form-popup">
+          <div class="form-popup__container">
+            <button class="form-popup__btn-close callback__btn-close"> </button>
+            <form class="form-popup__form" action="#">
+              <h4 class="form-popup__title">Заказать звонок</h4>
+
+              <input
+                class="form-popup__field"
+                type="tel"
+                name="userphone"
+                placeholder="Телефон"
+              />
+
+              <p class="form-popup__agreement"
+                >Нажимая “отправить”, вы даете согласие на
+                <a class="form-popup__agreement-link" href="#"
+                  >обработку персональных данных</a
+                >
+                и соглашаетесь с нашей
+                <a class="form-popup__agreement-link" href="#"
+                  >политикой конфиденциальности</a
+                ></p
+              >
+              <button class="form-popup__btn-submit btn-action" type="submit"
+                >отправить</button
+              >
+            </form>
+          </div>
+        </div>
+
         <section class="page__services services">
           <div class="services__container container">
             <div class="services__title-box">
               <h1 class="services__title">Услуги и сервисы</h1>
               <ul class="services__userbar">
                 <li class="services__userbar-item">
-                  <button class="services__userbar-link services__btn-feedback" type="button">
+                  <button
+                    class="services__userbar-link services__btn-feedback"
+                    type="button"
+                  >
                     <span class="services__userbar-text">
                       Оставить заявку
                     </span>
@@ -273,16 +292,19 @@
                     ноутбук Dell с официальной гарантией производителя.
                   </p>
                   <p class="services__text-item">
-                    Мы успешно работаем с 1992 года и заслужили репутацию
-                    надежного партнера<span class="services__text-add"
+                    <span class="services__text-add-mobile"
+                      >Мы успешно работаем с 1992 года и заслужили репутацию
+                    надежного партнера<span class="services__text-add-tablet"
                       >, что подтверждает большое количество постоянных
                       клиентов. Мы гордимся тем, что к нам обращаются по
                       рекомендациям и, в свою очередь, советуют нас родным и
                       близким.</span
-                    >
+                    ></span></span>
                   </p>
                 </div>
-                <button class="services__add-btn" type="button">Читать далее</button>
+                <button class="services__add-btn" type="button"
+                  >Читать далее</button
+                >
               </div>
               <div class="services__img-box">
                 <img
@@ -456,7 +478,7 @@
             <div class="repair-viev__content swiper">
               <ul class="repair-viev__list swiper-wrapper">
                 <li class="repair-viev__item swiper-slide">
-                  <h3 class="repair-viev__title">Ремонт ноутбуков</h3>
+                  <h3 class="repair-viev__item-title">Ремонт ноутбуков</h3>
                   <button
                     class="repair-viev__btn swiper__btn btn-arrow"
                     type="button"
@@ -464,7 +486,7 @@
                 </li>
 
                 <li class="repair-viev__item swiper-slide">
-                  <h3 class="repair-viev__title">Ремонт планшетов</h3>
+                  <h3 class="repair-viev__item-title">Ремонт планшетов</h3>
                   <button
                     class="repair-viev__btn swiper__btn btn-arrow"
                     type="button"
@@ -472,7 +494,7 @@
                 </li>
 
                 <li class="repair-viev__item swiper-slide">
-                  <h3 class="repair-viev__title">Ремонт ПК</h3>
+                  <h3 class="repair-viev__item-title">Ремонт ПК</h3>
                   <button
                     class="repair-viev__btn swiper__btn btn-arrow"
                     type="button"
@@ -480,7 +502,7 @@
                 </li>
 
                 <li class="repair-viev__item swiper-slide">
-                  <h3 class="repair-viev__title">Ремонт мониторов</h3>
+                  <h3 class="repair-viev__item-title">Ремонт мониторов</h3>
                   <button
                     class="repair-viev__btn swiper__btn btn-arrow"
                     type="button"
@@ -488,7 +510,7 @@
                 </li>
 
                 <li class="repair-viev__item swiper-slide">
-                  <h3 class="repair-viev__title">Ремонт роботов</h3>
+                  <h3 class="repair-viev__item-title">Ремонт роботов</h3>
                   <button
                     class="repair-viev__btn swiper__btn btn-arrow"
                     type="button"
@@ -524,9 +546,7 @@
                   <div class="list-prices__terms list-prices__time">
                     <h3 class="list-prices__name--tablet">Срок</h3>
                   </div>
-                  <div class="list-prices__btn-inner">
-
-                  </div>
+                  <div class="list-prices__btn-inner"> </div>
                 </li>
 
                 <li class="list-prices__item swiper-slide">

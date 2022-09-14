@@ -2,6 +2,7 @@ export default function callbackOpen() {
   let buttonCallback = document.querySelector(".userbar__call");
   let menuCallback = document.querySelector(".callback");
   let buttonCallbackClose = document.querySelector(".callback__btn-close");
+  let overlay = document.querySelector(".page__overlay");
 
   buttonCallback.addEventListener("click", function () {
     menuCallback.classList.add("callback--active");

@@ -2,6 +2,7 @@ export default function feedbackOpen () {
 let buttonFeedback = document.querySelector(".userbar__chat");
 let menuFeedback = document.querySelector(".feedback");
 let buttonFeedbackClose = document.querySelector(".feedback__btn-close");
+let overlay = document.querySelector(".page__overlay");
 
 buttonFeedback.addEventListener("click", function () {
   menuFeedback.classList.add("feedback--active");
