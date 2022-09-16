@@ -1,5 +1,5 @@
 export default function callbackOpen() {
-  let buttonCallback = document.querySelector(".userbar__call");
+  let buttonCallback = document.querySelector(".call-btn");
   let menuCallback = document.querySelector(".callback");
   let buttonCallbackClose = document.querySelector(".callback__btn-close");
   let overlay = document.querySelector(".page__overlay");
@@ -9,12 +9,6 @@ export default function callbackOpen() {
     overlay.classList.add("page__overlay--active");
     e.preventDefault();
   });
-
-  buttonCallbackClose.addEventListener("click", function () {
-    menuCallback.classList.remove("callback--active");
-    overlay.classList.remove("page__overlay--active");
-  });
-
 
   let buttonCallbackDesctop = document.querySelector(".sidebar__call");
 
