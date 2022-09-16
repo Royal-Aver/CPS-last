@@ -671,8 +671,7 @@ a {
   z-index: 100;
   transform: translateX(120%);
   transition: opacity .5s ease-in-out, transform .5s ease-in-out;
-  position: fixed;
-  overflow: auto; }
+  position: fixed; }
   .callback--active {
     transform: translateX(0%);
     position: absolute; }
@@ -684,8 +683,7 @@ a {
   top: 0;
   min-height: 100vh;
   padding: 24px 0;
-  box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
-  overflow: auto; }
+  box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2); }
   .form-popup::before {
     content: "";
     position: absolute;
@@ -872,7 +870,7 @@ a {
       display: block; } }
 
 .services__link {
-  display: block;
+  display: inline-block;
   font-size: 16px;
   line-height: 24px;
   color: #7E7E82;
