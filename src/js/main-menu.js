@@ -14,6 +14,11 @@ export default function CallingMainMenu () {
     sidebar.classList.remove("sidebar--active");
     overlay.classList.remove("page__overlay--active");
   });
+
+  overlay.addEventListener("click", function () {
+    sidebar.classList.remove("sidebar--active");
+    overlay.classList.remove("page__overlay--active");
+  })
 }
 
 CallingMainMenu();

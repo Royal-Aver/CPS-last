@@ -1,6 +1,6 @@
 .btn-action {
   position: relative;
-  width: 108px;
+  width: 136px;
   height: 32px;
   background-color: $radical-red;
   border-radius: 16px;
@@ -14,6 +14,7 @@
   align-items: center;
   padding-left: 12px;
   font-weight: 700;
+  transition: background-color .3s ease-in-out;
 
   &::after {
     content: "";
@@ -24,5 +25,9 @@
     transform: translateY(-50%);
     width: 7px;
     height: 10px;
+  }
+
+  &:hover {
+    background-color: lighten($radical-red, 15%);
   }
 }
