@@ -3,7 +3,6 @@
   transform: translateX(120%);
   transition: opacity .5s ease-in-out, transform .5s ease-in-out;
   position: fixed;
-  overflow: auto;
 
   &--active {
     transform: translateX(0%);
