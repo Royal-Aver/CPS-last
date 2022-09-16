@@ -76,6 +76,15 @@ html, body {
   letter-spacing: -0.2px;
 }
 
+body {
+  @media (min-width: 1366px) {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1480px;
+    position: relative;
+  }
+}
+
 h2 {
   font-size: 16px;
   line-height: 24px;
@@ -95,14 +104,14 @@ h2 {
   }
 
   @media (min-width: 1366px) {
-      min-width: 1002px;
+      max-width: 1276px;
       padding:0 45px;
   }
 }
 
 .wrapper {
   @media (min-width: 1366px) {
-padding-left: 296px;
+padding-left: 320px;
   }
 }
 
@@ -116,9 +125,14 @@ padding-left: 296px;
   opacity: 0;
   z-index: -1;
   transition: opacity .5s ease-in-out, z-index .5s ease-in-out;
+  height: 100vh;
 
   &--active {
-    z-index: 50;
+    z-index: 40;
     opacity: 0.96;
+
+    @media (min-width: 1366px) {
+      z-index: 100;
+    }
   }
 }

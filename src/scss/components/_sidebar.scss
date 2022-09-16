@@ -1,17 +1,18 @@
 .sidebar {
   position: absolute;
-  width: 296px;
+  width: 320px;
   left: 0;
   font-size: 16px;
   line-height: 24px;
   background-color: $white;
   box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
-  height: 100vh;
+  height: 1910px;
   top: 0;
   transform: translateX(-120%);
   transition: transform .5s ease-in-out;
-  z-index: 100;
+  z-index: 50;
   overflow: auto;
+  overflow: hidden;
 
   &--active {
     transform: translateX(0%);
@@ -19,7 +20,6 @@
 
   @media (min-width: 1366px) {
     transform: translateX(0%);
-    position: fixed;
     box-shadow: none;
     }
 }
@@ -29,6 +29,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .sidebar__header {
