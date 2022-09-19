@@ -20,3 +20,5 @@ buttonOpenFullText.addEventListener("click", function () {
 
 
 serviceOpenText();
+
+

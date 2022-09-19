@@ -51,10 +51,26 @@ padding-bottom: 50px;
   background: #FFFFFF;
   border: 1px solid #EAEAEA;
   border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    .repair-viev__img {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+  }
 
   @media (min-width: 768px) {
     width: auto;
   }
+}
+
+.repair-viev__img {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  transition: transform .9s ease-in-out, opacity .9s ease-in-out;
 }
 
 .repair-viev__item-title {

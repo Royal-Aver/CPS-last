@@ -78,7 +78,6 @@ html, body {
 
 body {
   @media (min-width: 1366px) {
-    display: flex;
     margin: 0 auto;
     max-width: 1480px;
     position: relative;
@@ -110,6 +109,8 @@ h2 {
 }
 
 .wrapper {
+  position: relative;
+
   @media (min-width: 1366px) {
 padding-left: 320px;
   }
@@ -125,7 +126,6 @@ padding-left: 320px;
   opacity: 0;
   z-index: -1;
   transition: opacity .5s ease-in-out, z-index .5s ease-in-out;
-  height: 100vh;
 
   &--active {
     z-index: 40;

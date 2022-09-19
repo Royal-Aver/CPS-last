@@ -150,6 +150,7 @@ margin-right: 32px;
   color: #7E7E82;
   padding: 8px 8px 8px 14px;
   border: 2px solid transparent;
+  transition: border .5s ease-in-out;
 
 &:hover {
   border: 2px solid #B8FFEC;

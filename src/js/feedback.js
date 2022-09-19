@@ -1,4 +1,4 @@
-export default function feedbackOpen () {
+export function feedbackOpen () {
 let buttonFeedback = document.querySelector(".chat-btn");
 let menuFeedback = document.querySelector(".feedback");
 let buttonFeedbackClose = document.querySelector(".feedback__btn-close");
@@ -31,3 +31,13 @@ overlay.addEventListener("click", function () {
 }
 
 feedbackOpen ();
+
+export function cancelsDefaultActionForm() {
+  let buttonAction = document.querySelector(".form-popup__btn-submit")
+
+  buttonAction.addEventListener('click', function(e) {
+    e.preventDefault();
+  })
+}
+
+cancelsDefaultActionForm();
