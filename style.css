@@ -664,8 +664,7 @@ a {
   transition: opacity .5s ease-in-out, transform .5s ease-in-out;
   position: fixed; }
   .feedback--active {
-    transform: translateX(0%);
-    position: absolute; }
+    transform: translateX(0%); }
 
 .callback {
   z-index: 100;
@@ -673,8 +672,7 @@ a {
   transition: opacity .5s ease-in-out, transform .5s ease-in-out;
   position: fixed; }
   .callback--active {
-    transform: translateX(0%);
-    position: absolute; }
+    transform: translateX(0%); }
 
 .form-popup {
   width: 320px;
@@ -875,7 +873,8 @@ a {
   line-height: 24px;
   color: #7E7E82;
   padding: 8px 8px 8px 14px;
-  border: 2px solid transparent; }
+  border: 2px solid transparent;
+  transition: border .5s ease-in-out; }
   .services__link:hover {
     border: 2px solid #B8FFEC;
     border-radius: 6px; }
@@ -1084,10 +1083,21 @@ a {
   justify-content: space-between;
   background: #FFFFFF;
   border: 1px solid #EAEAEA;
-  border-radius: 6px; }
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden; }
+  .repair-viev__item:hover .repair-viev__img {
+    opacity: 1;
+    transform: scale(1.2); }
   @media (min-width: 768px) {
     .repair-viev__item {
       width: auto; } }
+
+.repair-viev__img {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  transition: transform .9s ease-in-out, opacity .9s ease-in-out; }
 
 .repair-viev__item-title {
   font-size: 16px;
@@ -1325,7 +1335,6 @@ html, body {
 
 @media (min-width: 1366px) {
   body {
-    display: flex;
     margin: 0 auto;
     max-width: 1480px;
     position: relative; } }
@@ -1350,9 +1359,11 @@ h2 {
       max-width: 1276px;
       padding: 0 45px; } }
 
-@media (min-width: 1366px) {
-  .wrapper {
-    padding-left: 320px; } }
+.wrapper {
+  position: relative; }
+  @media (min-width: 1366px) {
+    .wrapper {
+      padding-left: 320px; } }
 
 .page__overlay {
   position: absolute;
@@ -1363,8 +1374,7 @@ h2 {
   background-color: #fff;
   opacity: 0;
   z-index: -1;
-  transition: opacity .5s ease-in-out, z-index .5s ease-in-out;
-  height: 100vh; }
+  transition: opacity .5s ease-in-out, z-index .5s ease-in-out; }
   .page__overlay--active {
     z-index: 40;
     opacity: 0.96; }
