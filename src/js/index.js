@@ -3,6 +3,7 @@ import '../scss/style.scss';
 import Swiper, { Pagination } from 'swiper';
 import {CallingMainMenu} from './main-menu';
 import {feedbackOpen} from './feedback';
+import {cancelsDefaultActionForm} from './feedback';
 import {callbackOpen} from './callback';
 import {serviceOpenText} from './service';
 import {repairOpenFullBlock} from './repair';
