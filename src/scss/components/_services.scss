@@ -136,7 +136,7 @@ margin-right: 32px;
         display: none;
       }
 
-      @media (min-width: 1120px) {
+      @media (min-width: 1366px) {
         &:last-child  {
           display: block;
         }
@@ -257,10 +257,9 @@ margin-bottom: 16px;
   border-radius: 6px;
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 1366px) {
   .services__img-box{
     flex: 1 0 531px;
-    // padding-top: 32px;
     }
 }
 
