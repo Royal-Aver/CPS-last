@@ -459,7 +459,7 @@ a {
   align-items: center;
   background-color: #fff;
   border-bottom: 1px solid #D9FFF5; }
-  @media (min-width: 1120px) {
+  @media (min-width: 1366px) {
     .header {
       display: none; } }
 
@@ -863,7 +863,7 @@ a {
     margin-right: 25px; }
   .services__item:last-child {
     display: none; }
-  @media (min-width: 1120px) {
+  @media (min-width: 1366px) {
     .services__item:last-child {
       display: block; } }
 
@@ -947,7 +947,7 @@ a {
   flex: 1 0 360px;
   border-radius: 6px; }
 
-@media (min-width: 1120px) {
+@media (min-width: 1366px) {
   .services__img-box {
     flex: 1 0 531px; } }
 
@@ -992,7 +992,7 @@ a {
     gap: 14px 22px;
     height: 175px; } }
 
-@media (min-width: 1120px) {
+@media (min-width: 1366px) {
   .repair-menu__list {
     grid-template-columns: repeat(4, 1fr);
     gap: 16px 32px; } }
